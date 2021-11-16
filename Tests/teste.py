@@ -33,9 +33,6 @@ def testpretMin():
     assert rezultat["horror"] == 110
 
 
-
-
-
 def testnumarTitluri():
     lista=[]
     lista = create(lista, 1, 'In Search of Lost Time', 'actiune', 100, 'silver')
@@ -46,3 +43,9 @@ def testnumarTitluri():
 
     assert rezultat["actiune"] == 1
     assert rezultat["drama"] == 1
+    
+ 
+def tests_functionalitati():
+    test_reducere_pret()
+    testpretMin()
+    testnumarTitluri()
